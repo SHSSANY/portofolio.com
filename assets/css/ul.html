@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hash Table Code</title>
+</head>
+<body>
+    <div class="code-container">
+        <ul class="code-list">
+            <li>#include &lt;iostream&gt;</li>
+            <li>#include &lt;fstream&gt;</li>
+            <li>#include &lt;string&gt;</li>
+            
+            <li>const int TABLE_SIZE = 100;  // Choose an appropriate size for your hash table</li>
+
+            <li>struct Record {</li>
+            <li>    std::string username;</li>
+            <li>    std::string phoneNumber;</li>
+            <li>    std::string address;</li>
+            <li>};</li>
+
+            <li>class HashTable {</li>
+            <li>private:</li>
+            <li>    Record table[TABLE_SIZE];</li>
+            
+            <li>    int hashFunction(const std::string&amp; key) {</li>
+            <li>        int sum = 0;</li>
+            <li>        for (char c : key) {</li>
+            <li>            sum += c;</li>
+            <li>        }</li>
+            <li>        return sum % TABLE_SIZE;</li>
+            <li>    }</li>
+
+            <li>public:</li>
+            <li>    HashTable() {</li>
+            <li>        for (int i = 0; i &lt; TABLE_SIZE; ++i) {</li>
+            <li>            table[i].username = "";</li>
+            <li>        }</li>
+            <li>    }</li>
+
+            <!-- ... (Continue listing the code in a similar way) -->
+
+            <li>    case 0:</li>
+            <li>        std::cout &lt;&lt; "Exiting program." &lt;&lt; std::endl;</li>
+            <li>        break;</li>
+            <li>    default:</li>
+            <li>        std::cout &lt;&lt; "Invalid choice. Please try again." &lt;&lt; std::endl;</li>
+            <li>    }</li>
+            <li>} while (choice != 0);</li>
+
+            <li>return 0;</li>
+            <li>}</li>
+        </ul>
+    </div>
+</body>
+</html>
